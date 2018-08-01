@@ -6,6 +6,6 @@ import initialState from './initialState';
  * and returns it, nothing more. Not listening to any actions
  * at the moment. This will populate the state
  */
-export default function products(state = initialState.products, action){
-     return state;
+export default function products(state = initialState.products, action) {
+    return state;
 };

@@ -5,8 +5,7 @@
  */
 export default {
   cart: [],
-  products: [
-    {
+  products: [{
       id: 1,
       name: "Redux",
       price: 100000

@@ -1,6 +1,8 @@
-import { createStore } from 'redux';
+import {
+  createStore
+} from 'redux';
 //Import our rootreducer from '../reducers/index.js' this hold our whole state
-import rootReducer from  '../reducers';
+import rootReducer from '../reducers';
 
 /**
  * When we call this function we return a created store with our reducers, so this is the same
@@ -10,10 +12,10 @@ import rootReducer from  '../reducers';
  * @param {Object} initialState 
  */
 export default function store() {
-    return createStore(
-      rootReducer,
-      window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-    );
+  return createStore(
+    rootReducer,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  );
 }
 
 //The last argument is just so you can use the Redux DevTools for Chrome/Firefox, download

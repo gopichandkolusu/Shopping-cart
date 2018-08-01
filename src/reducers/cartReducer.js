@@ -14,7 +14,7 @@ export default function cart(state = initialState.cart, action) {
             //If 'REMOVE' from 'cartActions.js', return a new array without the
             //item with the ID we clicked on. filter returns a new array, don't
             //have to spread here
-            return state.filter( i => i.id !== action.item.id);
+            return state.filter(i => i.id !== action.item.id);
         default:
             return state;
     }
